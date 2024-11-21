@@ -1,7 +1,7 @@
 # Sound Classifier
 
 <div align="center">
-  <img src="./images/Gabor%20Spectrum.png" alt="GABOR_BANK_FILTERS" width="90%">
+  <img src="./images/Gabor%20Spectrum.svg" alt="GABOR_BANK_FILTERS" width="90%">
 </div>
 
 1. **Perceptual Frequency Analysis**:
@@ -13,15 +13,13 @@
    - Each window is processed with a Gabor filter bank to extract mean and standard deviation responses.
    - The resulting feature vector captures rich time-frequency information.
 
-<div align="center">
-  <img src="./images/Mel%20to%20Hz%20Mapping.png" alt="MEL_TO_HZ_MAPPING" width="90%">
-</div>
-
 3. **Simple yet Effective Classifier**:
    - A KNN classifier is trained using the extracted features.
    - Designed for easy evaluation and modification.
 
----
+<div align="center">
+  <img src="./images/Mel%20to%20Hz%20Mapping.svg" alt="MEL_TO_HZ_MAPPING" width="90%">
+</div>
 
 ## Structure
 
@@ -44,12 +42,10 @@
     - Mel scale versus normal frequency mapping.
     - Time-frequency representations.
 
-- **[4] `knn_audio.py`** (*Main Script*):
+- `knn_audio.py`
   - Loads audio data.
   - Extracts features using `get_features`.
   - Trains and evaluates a KNN classifier.
-
----
 
 ## Metrics
 
