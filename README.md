@@ -39,6 +39,11 @@ Performance aligns with the expected range of **55% - 68%** for the test set.
 
 - `data` (*Dataset [data.mat](https://ocw.cs.pub.ro/courses/_media/ps/data.mat)*)
 - `images` (*Folder in which the images are saved*)
+
+- `knn_audio.py`
+  - Loads audio data.
+  - Extracts features using `get_features`.
+  - Trains and evaluates a KNN classifier.
 - `include` (*All functions are included here*)
   - **[1] `gabor_filters.py`** (*Generates Gabor filters based on the Mel scale*):
     - `gabor_filter`: Generates a Gabor filter (cosine and sine components).
@@ -53,7 +58,3 @@ Performance aligns with the expected range of **55% - 68%** for the test set.
     - Spectrum for Gaussian and Gabor filters.
     - Mel scale versus normal frequency mapping.
     - Time-frequency representations.
-- `knn_audio.py`
-  - Loads audio data.
-  - Extracts features using `get_features`.
-  - Trains and evaluates a KNN classifier.
