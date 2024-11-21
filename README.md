@@ -1,7 +1,7 @@
 # Sound classifier
 
 <div style="display: flex; align-items: center; justify-content: space-around;">
-  <img src="./images/Gabor%20Spectrum.png" alt="GABOR_BANK_FILTERS" width="45%">
+  <img src="./images/Gabor%20Spectrum.png" alt="GABOR_BANK_FILTERS" width="45%" style="margin-right: 10px;">
   <img src="./images/Mel%20to%20Hz%20Mapping.png" alt="MEL_TO_HZ_MAPPING" width="45%">
 </div>
 
