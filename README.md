@@ -14,8 +14,8 @@
    - The resulting feature vector captures rich time-frequency information.
 
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
-  <img src="./images/Gabor%Cosine.svg" alt="GABOR_COSINE" width="45%">
-  <img src="./images/Gabor%Sine.svg" alt="GABOR_SINE" width="45%">
+  <img src="./images/Gabor%20Cosine.svg" alt="GABOR_COSINE" width="45%">
+  <img src="./images/Gabor%20Sine.svg" alt="GABOR_SINE" width="45%">
 </div>
 
 1. **Simple yet Effective Classifier**:
@@ -37,7 +37,7 @@ Performance aligns with the expected range of **55% - 68%** for the test set.
 
 ## Structure
 
-- `data` (*Download the [data.mat](https://ocw.cs.pub.ro/courses/_media/ps/data.mat) file and add it in data folder*)
+- `data` (*Dataset [data.mat](https://ocw.cs.pub.ro/courses/_media/ps/data.mat)*)
 - `images` (*Folder in which the images are saved*)
 
 - `include`
