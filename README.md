@@ -1,9 +1,6 @@
 # Sound classifier
 
-<div style="display: flex; align-items: center; justify-content: space-around;">
-  <img src="./images/Gabor%20Spectrum.png" alt="GABOR_BANK_FILTERS" width="45%" style="margin-right: 10px;">
-  <img src="./images/Mel%20to%20Hz%20Mapping.png" alt="MEL_TO_HZ_MAPPING" width="45%">
-</div>
+<img src="./images/Gabor%20Spectrum.png" alt="GABOR_BANK_FILTERS" width="80%" style="margin: auto;">
 
 1. **Perceptual Frequency Analysis**:
    - Utilizes the Mel scale for filter design, emphasizing frequencies relevant to human auditory perception.
@@ -13,6 +10,9 @@
    - Audio signals are segmented into overlapping windows.
    - Each window is processed with a Gabor filter bank to extract mean and standard deviation responses.
    - The resulting feature vector captures rich time-frequency information.
+
+<img src="./images/Mel%20to%20Hz%20Mapping.png" alt="MEL_TO_HZ_MAPPING" width="45%">
+
 
 3. **Simple yet Effective Classifier**:
    - A KNN classifier is trained using the extracted features.
