@@ -18,12 +18,13 @@
    - Designed for easy evaluation and modification.
 
 <div align="center">
-  <img src="./images/Mel%20to%20Hz%20Mapping.svg" alt="MEL_TO_HZ_MAPPING" width="90%">
+  <img src="./images/Mel%20to%20Hz%20Mapping.svg" alt="MEL_TO_HZ_MAPPING" width="40%">
 </div>
 
 ## Structure
 
 - `data` (*Download the [data.mat](https://ocw.cs.pub.ro/courses/_media/ps/data.mat) file and add it in data folder*)
+- `images` (*Folder in which the images are saved*)
 
 - `include`
   - **[1] `gabor_filters.py`** (*Generates Gabor filters based on the Mel scale*):
