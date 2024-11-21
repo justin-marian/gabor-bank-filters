@@ -1,7 +1,7 @@
 # Sound Classifier
 
-<div style="text-align: center;">
-  <img src="./images/Gabor%20Spectrum.png" alt="GABOR_BANK_FILTERS" width="90%" style="margin: auto;">
+<div align="center">
+  <img src="./images/Gabor%20Spectrum.png" alt="GABOR_BANK_FILTERS" width="90%">
 </div>
 
 1. **Perceptual Frequency Analysis**:
@@ -13,8 +13,8 @@
    - Each window is processed with a Gabor filter bank to extract mean and standard deviation responses.
    - The resulting feature vector captures rich time-frequency information.
 
-<div style="text-align: center;">
-  <img src="./images/Mel%20to%20Hz%20Mapping.png" alt="MEL_TO_HZ_MAPPING" width="90%" style="margin: auto;">
+<div align="center">
+  <img src="./images/Mel%20to%20Hz%20Mapping.png" alt="MEL_TO_HZ_MAPPING" width="90%">
 </div>
 
 3. **Simple yet Effective Classifier**:
