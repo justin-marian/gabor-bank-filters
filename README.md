@@ -1,6 +1,5 @@
 # Sound Classifier
 
-
 1. **Perceptual Frequency Analysis**:
    - Utilizes the Mel scale for filter design, emphasizing frequencies relevant to human auditory perception.
    - Gabor filters provide time-frequency localization, critical for capturing audio features effectively.
@@ -40,24 +39,20 @@ Performance aligns with the expected range of **55% - 68%** for the test set.
 
 - `data` (*Dataset [data.mat](https://ocw.cs.pub.ro/courses/_media/ps/data.mat)*)
 - `images` (*Folder in which the images are saved*)
-
-- `include`
+- `include` (*All functions are included here*)
   - **[1] `gabor_filters.py`** (*Generates Gabor filters based on the Mel scale*):
     - `gabor_filter`: Generates a Gabor filter (cosine and sine components).
     - `gabor_filter_bank`: Creates a bank of Gabor filters across a range of Mel-scale frequencies.
     - `gaussian_filter`: Creates Gaussian filters for comparison.
     - `from_hz_to_mel`, `from_mel_to_hz`: Converts between Hertz and Mel scale.
-
   - **[2] `get_features.py`** (*Core features extractor*):
     - Segments audio into overlapping windows.
     - Applies the Gabor filter bank to extract features (mean and standard deviation for each filter response).
     - Outputs a feature vector representing the signal.
-
   - **[3] `plots.py`** (*Plotting tools*):
     - Spectrum for Gaussian and Gabor filters.
     - Mel scale versus normal frequency mapping.
     - Time-frequency representations.
-
 - `knn_audio.py`
   - Loads audio data.
   - Extracts features using `get_features`.
