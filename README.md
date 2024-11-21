@@ -1,4 +1,4 @@
-# Sound Classifier
+## Sound Classifier
 
 1. **Perceptual Frequency Analysis**:
    - Utilizes the Mel scale for filter design, emphasizing frequencies relevant to human auditory perception.
