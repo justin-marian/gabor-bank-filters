@@ -1,6 +1,7 @@
 # Sound classifier
 
-## Key Features
+![GABOR_BANK_FILTERS](./images/Gabor%20Spectrum.png)
+![MEL_TO_HEZ_MAPPING](./images/Mel%20to%20Hz%20Mapping.png)
 
 1. **Perceptual Frequency Analysis**:
    - Utilizes the Mel scale for filter design, emphasizing frequencies relevant to human auditory perception.
@@ -26,12 +27,12 @@
     - `gaussian_filter`: Creates Gaussian filters for comparison.
     - `from_hz_to_mel`, `from_mel_to_hz`: Converts between Hertz and Mel scale.
 
-  - **[2] `get_features.py`** (*Core features extracter*)
+  - **[2] `get_features.py`** (*Core features extractor*)
     - Segments audio into overlapping windows.
     - Applies the Gabor filter bank to extract features (mean and standard deviation for each filter response).
     - Outputs a feature vector representing the signal.
 
-  - **[3] `plots.py`** (*Ploting tools*)
+  - **[3] `plots.py`** (*Plotting tools*)
     - Spectrum for Gaussian and Gabor filters.
     - Mel scale versus normal frequency mapping.
     - Time-frequency representations.
@@ -40,28 +41,6 @@
   - Loads audio data.
   - Extracts features using `get_features`.
   - Trains and evaluates a KNN classifier.
-
-### Gabor Filter Bank
-
-[GABOR_BANK_FILTERS](./images/Gabor%20Spectrum.png)
-
-- Filters are centered on frequencies distributed across the Mel scale.
-  1. Divide the Mel scale into equal segments between a minimum (`A`) and maximum (`B`) frequency.
-  2. Convert Mel values to Hertz for the filter's center frequency and bandwidth.
-  3. Generate Gabor filters with cosine (real) and sine (imaginary) components for time-frequency representation.
-
-### Feature Extraction
-
-- Audio signals are segmented into overlapping windows of size `K` with a step of **12 ms**.
-- Each window is convolved with the Gabor filter bank.
-- Feature vector construction:
-  - Compute **mean** and **standard deviation** of filter responses for each window.
-  - Concatenate these statistics across all filters, resulting in a fixed-size vector (2M features per window).
-
-### Classification
-
-- A **KNN classifier** is trained on the extracted features.
-- Evaluates performance on training and testing datasets.
 
 ## Metrics
 
