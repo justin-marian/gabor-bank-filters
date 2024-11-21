@@ -1,12 +1,13 @@
 # Sound Classifier
 
-<div align="center">
-  <img src="./images/Gabor%20Spectrum.svg" alt="GABOR_BANK_FILTERS" width="80%">
-</div>
 
 1. **Perceptual Frequency Analysis**:
    - Utilizes the Mel scale for filter design, emphasizing frequencies relevant to human auditory perception.
    - Gabor filters provide time-frequency localization, critical for capturing audio features effectively.
+
+<div align="center">
+  <img src="./images/Mel%20to%20Hz%20Mapping.svg" alt="MEL_TO_HZ_MAPPING" width="60%">
+</div>
 
 2. **Efficient Feature Extraction**:
    - Audio signals are segmented into overlapping windows.
@@ -23,7 +24,7 @@
    - Designed for easy evaluation and modification.
 
 <div align="center">
-  <img src="./images/Mel%20to%20Hz%20Mapping.svg" alt="MEL_TO_HZ_MAPPING" width="60%">
+  <img src="./images/Gabor%20Spectrum.svg" alt="GABOR_BANK_FILTERS" width="80%">
 </div>
 
 ## Metrics
