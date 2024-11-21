@@ -1,7 +1,7 @@
 # Sound Classifier
 
 <div align="center">
-  <img src="./images/Gabor%20Spectrum.svg" alt="GABOR_BANK_FILTERS" width="80%">
+  <img src="./images/Mel%20to%20Hz%20Mapping.svg" alt="MEL_TO_HZ_MAPPING" width="60%">
 </div>
 
 1. **Perceptual Frequency Analysis**:
@@ -17,9 +17,19 @@
    - A KNN classifier is trained using the extracted features.
    - Designed for easy evaluation and modification.
 
+
 <div align="center">
-  <img src="./images/Mel%20to%20Hz%20Mapping.svg" alt="MEL_TO_HZ_MAPPING" width="60%">
+  <img src="./images/Gabor%20Spectrum.svg" alt="GABOR_BANK_FILTERS" width="80%">
 </div>
+
+## Metrics
+
+| Metric                   | Value           |
+|--------------------------|-----------------|
+| **Training Accuracy**    | 77%             |
+| **Testing Accuracy**     | 67%             |
+
+Performance aligns with the expected range of **55% - 68%** for the test set.
 
 ## Structure
 
@@ -47,12 +57,3 @@
   - Loads audio data.
   - Extracts features using `get_features`.
   - Trains and evaluates a KNN classifier.
-
-## Metrics
-
-| Metric                   | Value           |
-|--------------------------|-----------------|
-| **Training Accuracy**    | 77%             |
-| **Testing Accuracy**     | 67%             |
-
-Performance aligns with the expected range of **55% - 68%** for the test set.
