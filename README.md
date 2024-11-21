@@ -1,7 +1,7 @@
 # Sound Classifier
 
 <div align="center">
-  <img src="./images/Mel%20to%20Hz%20Mapping.svg" alt="MEL_TO_HZ_MAPPING" width="60%">
+  <img src="./images/Gabor%20Spectrum.svg" alt="GABOR_BANK_FILTERS" width="80%">
 </div>
 
 1. **Perceptual Frequency Analysis**:
@@ -13,13 +13,17 @@
    - Each window is processed with a Gabor filter bank to extract mean and standard deviation responses.
    - The resulting feature vector captures rich time-frequency information.
 
-3. **Simple yet Effective Classifier**:
+<div align="center" style="display: flex; justify-content: center; gap: 20px;">
+  <img src="./images/Gabor%Cos.svg" alt="GABOR_COS" width="45%">
+  <img src="./images/Gabor%Sine.svg" alt="GABOR_SINE" width="45%">
+</div>
+
+1. **Simple yet Effective Classifier**:
    - A KNN classifier is trained using the extracted features.
    - Designed for easy evaluation and modification.
 
-
 <div align="center">
-  <img src="./images/Gabor%20Spectrum.svg" alt="GABOR_BANK_FILTERS" width="80%">
+  <img src="./images/Mel%20to%20Hz%20Mapping.svg" alt="MEL_TO_HZ_MAPPING" width="60%">
 </div>
 
 ## Metrics
