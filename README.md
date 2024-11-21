@@ -1,7 +1,9 @@
 # Sound classifier
 
-![GABOR_BANK_FILTERS](./images/Gabor%20Spectrum.png)
-![MEL_TO_HEZ_MAPPING](./images/Mel%20to%20Hz%20Mapping.png)
+<div style="display: flex; align-items: center; justify-content: space-around;">
+  <img src="./images/Gabor%20Spectrum.png" alt="GABOR_BANK_FILTERS" width="45%">
+  <img src="./images/Mel%20to%20Hz%20Mapping.png" alt="MEL_TO_HZ_MAPPING" width="45%">
+</div>
 
 1. **Perceptual Frequency Analysis**:
    - Utilizes the Mel scale for filter design, emphasizing frequencies relevant to human auditory perception.
