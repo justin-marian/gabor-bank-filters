@@ -1,7 +1,7 @@
 # Sound Classifier
 
 <div align="center">
-  <img src="./images/Gabor%20Spectrum.svg" alt="GABOR_BANK_FILTERS" width="90%">
+  <img src="./images/Gabor%20Spectrum.svg" alt="GABOR_BANK_FILTERS" width="80%">
 </div>
 
 1. **Perceptual Frequency Analysis**:
@@ -18,7 +18,7 @@
    - Designed for easy evaluation and modification.
 
 <div align="center">
-  <img src="./images/Mel%20to%20Hz%20Mapping.svg" alt="MEL_TO_HZ_MAPPING" width="40%">
+  <img src="./images/Mel%20to%20Hz%20Mapping.svg" alt="MEL_TO_HZ_MAPPING" width="60%">
 </div>
 
 ## Structure
