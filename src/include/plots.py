@@ -10,6 +10,7 @@ from src.include.gabor_filters import gaussian_filter, gabor_filter, gabor_filte
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../images"))
 os.makedirs(BASE_DIR, exist_ok=True)
 BASE_NAME = os.path.join(BASE_DIR, "")
+TYPE_IMG = "svg"
 
 
 def plot_gaussian_filter(size: int, sigma: float) -> None:
@@ -25,12 +26,13 @@ def plot_gaussian_filter(size: int, sigma: float) -> None:
     plt.yticks(np.arange(0, 0.022, 0.002))
     plt.grid(False)
     plt.tight_layout()
-    plt.savefig(f"{BASE_NAME}Gaussian.png")
+    plt.savefig(f"{BASE_NAME}Gaussian.{TYPE_IMG}")
     plt.show()
 
 def plot_gabor_time_domain(size: int, sigma: float, frequency: float) -> None:
     """Plot the Gabor filter response in the time domain for cosine and sine components."""
     global BASE_NAME
+    global TYPE_IMG
 
     cos_component, sin_component = gabor_filter(size, sigma, frequency)
 
@@ -43,7 +45,7 @@ def plot_gabor_time_domain(size: int, sigma: float, frequency: float) -> None:
     plt.yticks(np.arange(-2, 2.0, 0.5))
     plt.tight_layout()
     plt.grid(False)
-    plt.savefig(f"{BASE_NAME}Gabor Cosine.png")
+    plt.savefig(f"{BASE_NAME}Gabor Cosine.{TYPE_IMG}")
     plt.show()
 
     # Sine component
@@ -55,12 +57,13 @@ def plot_gabor_time_domain(size: int, sigma: float, frequency: float) -> None:
     plt.yticks(np.arange(-2, 2.5, 0.5))
     plt.tight_layout()
     plt.grid(False)
-    plt.savefig(f"{BASE_NAME}Gabor Sine.png")
+    plt.savefig(f"{BASE_NAME}Gabor Sine.{TYPE_IMG}")
     plt.show()
 
 def plot_spectrum(A: float, B: float, M: int, fs: float, size: int) -> None:
     """Plot the spectrum of Gabor filter cosine and sine components."""
     global BASE_NAME
+    global TYPE_IMG
 
     freq_axis, gabor_filters = gabor_filter_bank(size, A, B, M, fs)
     freq_half = freq_axis[:size // 2]
@@ -85,12 +88,13 @@ def plot_spectrum(A: float, B: float, M: int, fs: float, size: int) -> None:
     plt.xlabel("Frequency (Hz)", fontsize=12)
     plt.ylabel("Amplitude", fontsize=12)
     plt.tight_layout()
-    plt.savefig(f"{BASE_NAME}Gabor Spectrum.png")
+    plt.savefig(f"{BASE_NAME}Gabor Spectrum.{TYPE_IMG}")
     plt.show()
 
 def plot_mel_to_normal_mapping(mel_units: np.ndarray, hz_units: np.ndarray) -> None:
     """Plot the mapping between Mel and normal (Hz) scales."""
     global BASE_NAME
+    global TYPE_IMG
 
     scaling_factor: float = max(hz_units) / max(mel_units)
     fig, ax1 = plt.subplots(figsize=(8, 10))
@@ -128,5 +132,5 @@ def plot_mel_to_normal_mapping(mel_units: np.ndarray, hz_units: np.ndarray) -> N
     ax2.set_ylabel("Hz Scale", fontsize=12)
 
     plt.tight_layout()
-    plt.savefig(f"{BASE_NAME}Mel to Hz Mapping.png")
+    plt.savefig(f"{BASE_NAME}Mel to Hz Mapping.{TYPE_IMG}")
     plt.show()
