@@ -14,7 +14,7 @@
    - The resulting feature vector captures rich time-frequency information.
 
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
-  <img src="./images/Gabor%Cos.svg" alt="GABOR_COS" width="45%">
+  <img src="./images/Gabor%Cosine.svg" alt="GABOR_COSINE" width="45%">
   <img src="./images/Gabor%Sine.svg" alt="GABOR_SINE" width="45%">
 </div>
 
